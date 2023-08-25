@@ -1,4 +1,6 @@
-@import "./base";
+@import "./utilities/mixins";
+@import "./utilities/variables";
+@import "./components/base";
 
 @import "./components/navbar";
 @import "./components/header";
