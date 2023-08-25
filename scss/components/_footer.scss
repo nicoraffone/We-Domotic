@@ -1,26 +1,14 @@
-.footer {
-    @include flex(column, normal, center);
-
-    &__logos{
-        margin: 1.5rem;
-        height: 2rem;
-        width: 6rem;
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: $color-secundario;
+    z-index: 97;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 45vw;
     }
-}
-
-@media (min-width: 1024px) and (orientation:landscape) {
-    .footer{
-        &__logos{
-        @include flex(column, center, center);
-        margin-top: 3vh;
-        height: auto;
-        width: 9rem;
-        padding: 0.2rem;
-        &:hover{
-            color: $color-secundario;
-            box-shadow: 0px 0px 2px 2px;
-            border-radius: 23px;
-        }
-    }
-}
 }

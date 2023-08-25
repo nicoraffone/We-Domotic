@@ -66,129 +66,6 @@ main {
   h4 {
     font-size: 1.1rem; } }
 
-/** 
-.navbox {
-    width: 100%;
-    height: 14.4vh;
-
-    .menu__desplegable {
-        top: 3.5vh;
-        display: block;
-        position: relative;
-        height: 60px;
-        z-index: 99;
-
-    .checkbox {
-        position: absolute;
-        display: block;
-        height: 32px;
-        width: 32px;
-        top: 20px;
-        left: 20px;
-        z-index: 5;
-        opacity: 0;
-        cursor: pointer;
-    }
-
-    .hamburger-lines {
-        display: block;
-        height: 26px;
-        width: 32px;
-        position: absolute;
-        top: 17px;
-        left: 20px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-
-        .line {
-            display: block;
-            height: 2px;
-            width: 100%;
-            margin: 0.2rem;
-            border-radius: 0px;
-            background: white;
-        }
-
-        .line1 {
-
-        transform-origin: 0% 0%;
-        transition: transform 0.4s ease-in-out;
-        }
-
-        .line2 {
-
-        transition: transform 0.2s ease-in-out;
-        }
-
-        .line3 {
-
-        transform-origin: 0% 100%;
-        transition: transform 0.4s ease-in-out;
-        }
-    }
-
-    .menu-items {
-        padding-top: 120px;
-
-        height: 100vh;
-        width: 100%;
-        transform: translate(-150%);
-        display: flex;
-        flex-direction: column;
-        margin-left: -40px;
-        padding-left: 50px;
-        transition: transform 0.5s ease-in-out;
-        text-align: center;
-        background:$color-principal;
-        li {
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            font-weight: 500;
-        }
-    }
-
-    input[type="checkbox"]:checked ~ .menu-items {
-        transform: translateX(0);
-    }
-
-    input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-        transform: rotate(45deg);
-    }
-
-    input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-        transform: scaleY(0);
-    }
-
-    input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-        transform: rotate(-45deg);
-    }
-
-    input[type="checkbox"]:checked ~ .logo {
-        display: none;
-    }
-    }
-
-    .menu-lineas {
-        max-width: 1050px;
-        width: 90%;
-        margin: auto;
-    }
-
-    .menu__desplegable a {
-    text-decoration: none;
-        color: white    ;
-        font-weight: 500;
-        font-size: 1.2rem;
-        padding: 0.7rem;
-    }
-}
-**/
-.container {
-  max-width: 540px;
-  position: fixed; }
-
 .navbar {
   display: flex;
   flex-direction: row;
@@ -198,129 +75,98 @@ main {
   box-shadow: 0 1px 2px rgba(121, 142, 165, 0.199);
   position: fixed;
   height: 20vh;
+  margin-top: -5vh;
   background-color: #1b2d6f;
   z-index: 98; }
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.navbar .menu-items {
-  display: flex; }
-
-.navbar .nav-container li {
-  list-style: none; }
-
-.navbar .nav-container a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 0.7rem; }
-
-.navbar .nav-container a:hover {
-  font-weight: bolder; }
-
-.nav-container {
-  display: block;
-  position: fixed;
-  left: 1rem;
-  top: -1px;
-  height: 60px;
-  z-index: 99; }
-
-.nav-container .checkbox {
-  position: absolute;
-  display: block;
-  height: 32px;
-  width: 32px;
-  top: 8vh;
-  left: 5vw;
-  z-index: 5;
-  opacity: 0;
-  cursor: pointer; }
-
-.nav-container .hamburger-lines {
-  display: block;
-  height: 26px;
-  width: 32px;
-  position: absolute;
-  top: 8vh;
-  left: 5vw;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.nav-container .hamburger-lines .line {
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: white; }
-
-.nav-container .hamburger-lines .line1 {
-  transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out; }
-
-.nav-container .hamburger-lines .line2 {
-  transition: transform 0.2s ease-in-out; }
-
-.nav-container .hamburger-lines .line3 {
-  transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out; }
-
-.navbar .menu-items {
-  padding-top: 25vh;
-  height: 70vh;
-  width: 100%;
-  transform: translate(-150%);
-  display: flex;
-  flex-direction: column;
-  margin-left: -25px;
-  padding-left: 50px;
-  border-radius: 10px;
-  transition: transform 0.5s ease-in-out;
-  text-align: center;
-  background-color: #1b2d6f; }
-
-.navbar .menu-items li {
-  margin-bottom: 1.2rem;
-  font-size: 1.5rem;
-  font-weight: 500; }
-
-.logo_navbar {
-  position: fixed;
-  width: 35vw;
-  top: 5vh;
-  left: 45vw; }
-
-.logos_contactonav {
-  position: fixed;
-  top: 60vh;
-  left: 33vw;
-  width: 40vw; }
-
-.logo {
-  position: fixed;
-  width: 35vw;
-  right: 25vw; }
-
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
-  transform: translateX(0); }
-
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-  transform: rotate(45deg); }
-
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-  transform: scaleY(0); }
-
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-  transform: rotate(-45deg); }
-
-.nav-container input[type="checkbox"]:checked ~ .logo {
-  display: none; }
+  .navbar .nav-container {
+    display: block;
+    position: relative;
+    top: 1.5vh;
+    height: 60px;
+    z-index: 99; }
+    .navbar .nav-container input {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 32px;
+      top: 8vh;
+      left: 5vw;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer; }
+    .navbar .nav-container input[type="checkbox"]:checked ~ .menu-items {
+      transform: translateY(0); }
+    .navbar .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(45deg); }
+    .navbar .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      transform: scaleY(0); }
+    .navbar .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-45deg); }
+    .navbar .nav-container input[type="checkbox"]:checked ~ .logo {
+      display: none; }
+    .navbar .nav-container .hamburger-lines {
+      display: block;
+      height: 20px;
+      width: 24.2px;
+      position: absolute;
+      top: 8vh;
+      left: 5vw;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .navbar .nav-container .hamburger-lines span {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: white; }
+      .navbar .nav-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out; }
+      .navbar .nav-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out; }
+      .navbar .nav-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out; }
+    .navbar .nav-container .menu-items {
+      padding-top: 19vh;
+      height: 70vh;
+      width: 80%;
+      transform: translateY(-150%);
+      display: flex;
+      flex-direction: column;
+      border-radius: 15px;
+      transition: transform 0.5s ease-in-out;
+      text-align: center;
+      background-color: #1b2d6f; }
+      .navbar .nav-container .menu-items .logo_navbar {
+        position: fixed;
+        width: 35vw;
+        top: 5vh;
+        left: 17vw; }
+      .navbar .nav-container .menu-items li {
+        list-style: none;
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500; }
+      .navbar .nav-container .menu-items a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 1.2rem;
+        padding: 0.7rem; }
+      .navbar .nav-container .menu-items a:hover {
+        font-weight: bolder; }
+      .navbar .nav-container .menu-items .logos_contactonav {
+        margin: auto;
+        width: 40%; }
+  .navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    margin-top: -4vh; }
 
 @media (min-width: 480px) and (orientation: landscape) {
   .logo {
@@ -381,60 +227,20 @@ main {
 .fix-page {
   background-color: white;
   display: block;
-  height: 30vh; }
+  height: 18vh; }
 
-.foto, .foto__vertical, .foto__portada, .foto__bio {
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: #44d8a4;
+  z-index: 97;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: white;
-  box-shadow: 0px 0px 3px 3px;
-  width: 70vw; }
-  .foto__vertical {
-    height: 65vw;
-    width: auto; }
-  .foto__bio {
-    box-shadow: none;
-    width: auto;
-    height: auto; }
-    .foto__bio img {
-      max-width: 240px; }
-
-@media (min-width: 768px) and (orientation: landscape) {
-  .foto, .foto__vertical, .foto__portada, .foto__bio {
-    width: 35vw; }
-    .foto__vertical {
-      width: 20vw;
-      height: auto; }
-    .foto__portada:hover {
-      color: #1b2d6f;
-      box-shadow: 0px 0px 3px 3px; } }
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: normal;
   align-items: center; }
-  .footer__logos {
-    margin: 1.5rem;
-    height: 2rem;
-    width: 6rem; }
-
-@media (min-width: 1024px) and (orientation: landscape) {
-  .footer__logos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3vh;
-    height: auto;
-    width: 9rem;
-    padding: 0.2rem; }
-    .footer__logos:hover {
-      color: #44d8a4;
-      box-shadow: 0px 0px 2px 2px;
-      border-radius: 23px; } }
+  footer img {
+    width: 45vw; }
 
 .expansiondelapag {
   display: flex;
@@ -456,12 +262,3 @@ main {
 @media (min-width: 1024px) and (orientation: landscape) {
   .carousel {
     margin-right: 5vw; } }
-
-@media (min-width: 1024px) and (orientation: landscape) {
-  .mapa {
-    margin-top: 5vh; }
-  .newsletter {
-    display: flex;
-    margin: 1rem; }
-    .newsletter p {
-      margin: 0; } }
