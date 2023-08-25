@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img{
+    max-width:  100%;
+}
+a{
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+h6{
+    color: rgb(137, 137, 137);
+}
+li{
+    list-style: none;
+    font-weight: bolder;
+}
+
+
+
+/*----------- NAVBAR CSS -------------*/
+.escritorio{
+    display: none;
+}
+.menu-lineas {
+    max-width: 1050px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbox {
+    width: 100%;
+    height: 14.4vh;
+/* box-shadow: 0 1px 4px rgb(146 161 176 / 15%);*/
+}
+
+.navbox .menu__desplegable li {
+    list-style: none;
+}
+
+.navbox .menu__desplegable a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+
+.menu__desplegable {
+    top: 3.5vh;
+    display: block;
+    position: relative;
+    height: 60px;
+    z-index: 99;
+}
+
+.menu__desplegable .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu__desplegable .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu__desplegable .hamburger-lines .line {
+    display: block;
+    height: 2px;
+    width: 70%;
+    border-radius: 0px;
+    background: #0e2431;
+}
+
+.menu__desplegable .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.menu__desplegable .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu__desplegable .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.menu__desplegable .menu-items {
+    padding-top: 120px;
+    box-shadow: inset 0 2000px rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.menu__desplegable .menu-items li {
+
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.titulo {
+    position: absolute;
+    top: 5vh;
+    right: 15vw;
+    font-size: 1rem;
+}
+.titulo a {
+    color: #000000;
+}
+
+.menu__desplegable input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+}
+
+.menu__desplegable input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.menu__desplegable input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.menu__desplegable input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+.menu__desplegable input[type="checkbox"]:checked ~ .logo{
+    display: none;
+}
+
+/*---NAVBAR CSS cierre---*/
+
+.estructura__index{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 65vh;
+}
+
+.carousel-item{
+    padding: 10vw;
+}
+
+.flex-footer{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.contacto-footer{
+    margin: 1.5rem;
+    height: 2rem;
+    width: 6rem;
+}
+
+/* ---- Pagina Autor ----*/
+.estructura__secundaria{
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(137, 137, 137);
+}
+.estructura__secundaria h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: rgb(70, 70, 70);
+}
+.estructura__secundaria p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.contenido__secciones{ 
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+}
+.tarjeta-galerias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.galeria{
+    border-style: solid;
+    border-color: #919191;
+}
+.galeria__vertical{
+    margin-left: 2.2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    border-style: solid;
+    border-color: #919191;
+}
+
+.estructura__terciaria{
+    padding: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(137, 137, 137);
+}
+
+.estructura__terciaria h2{
+    color: rgb(70, 70, 70);
+}
+
+
+
+
+
+@media (min-width: 919px) and (orientation:landscape) {
+.navbox, .menu-lineas, .menu-items, .menu__desplegable, .hamburger-lines, .checkbox, .line, .line1, .line2, .line3 {
+        display: none;
+}
+.titulo-escritorio a{
+    color: #000000;
+}
+.titulo-escritorio{
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+/*index*/
+.estructura__escritorioindex{
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.menu__escritorio{
+    margin-left: 10rem;
+    padding-bottom: 17rem;
+    display: flex;
+    flex-direction: column;
+}
+/*index*/
+
+
+.estructura__secundaria{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+}
+.presentacion__secciones{
+    max-width: 1000px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+}
+.contenido__secciones{
+    max-width: 1000px;
+    max-height: 900px;
+    padding-left:5rem;
+    padding-right: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
+.menu__escritoriosecciones{
+    padding-top: 2rem;
+    padding-bottom: 30rem;
+}
+} 
+
+
+
+
+@media (min-width: 1000px) and (orientation:landscape){
+    .carousel-item{
+        max-width: 1000px;
+        padding: 10rem;
+    }
+}
+
+
+
+
+
+@media (min-width: 1400px) and (orientation:landscape){
+    .carousel-item{
+        margin-left:10rem;
+    }
+    .menu__escritoriosecciones{
+        padding-bottom: 23rem;
+        }
+}

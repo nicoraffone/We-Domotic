@@ -1,0 +1,33 @@
+
+.expansiondelapag{
+    display: flex;
+    flex-direction: column;
+    height: 5000px;
+}
+
+
+
+.carousel{
+    display: flex;
+    align-items: center;
+    height: 65vh;
+}
+
+
+@media (min-width: 768px) and (orientation:landscape){
+    .carousel{
+        max-width: 680px;
+
+    }
+    .carousel-inner{
+        margin: 0;
+        padding: 0;
+
+    }
+}
+
+@media (min-width: 1024px) and (orientation:landscape){
+    .carousel{
+    margin-right: 5vw;
+}
+}

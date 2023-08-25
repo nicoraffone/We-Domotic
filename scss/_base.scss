@@ -1,0 +1,93 @@
+$color-principal: rgb(27, 45, 111);
+$color-secundario:  rgb(68, 216, 164);
+$color-terciario: rgb(255, 255, 255);
+
+
+
+@mixin flex($direction, $justify, $align,){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin grid($columns, $gap, $align,){
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+    align-items: $align;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+img{
+    max-width:  100%;
+}
+a{
+    text-decoration: none;
+    color: $color-principal;
+    &:hover{
+        color: $color-secundario;
+    }
+}
+
+li{
+    list-style: none;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+h4{
+    color: $color-secundario;
+    font-size: 0.9rem;
+}
+
+hr{
+    background: $color-secundario;
+}
+header{
+    background-color: $color-principal;
+}
+main{
+    @include flex(column, normal, center);
+    padding: 10vw;
+    color: $color-secundario;
+
+    & h2{
+        @include flex(column, normal, center);
+        margin-bottom: 0.5rem;
+        color:$color-principal;
+    }
+    & p{
+        display: flex;
+        align-items: center;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1024px) and (orientation:landscape) {
+
+main{
+        @include flex(row, space-around, start);
+        padding: 0;
+    }
+h3{
+        font-size: 1.7rem;
+        font-weight: normal;
+    }
+h4{
+        font-size: 1.1rem;
+    }
+}
