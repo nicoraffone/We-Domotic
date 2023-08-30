@@ -1,1 +1,31 @@
-
+header{
+    width: 100%;
+    background-color: $color-principal;
+    height: 120px;
+    .navbar{
+        padding: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        img{
+            width: 140px;
+            max-width: 200px;
+            margin: auto;
+        }
+    }
+    .container-fluid{
+        background-color: $color-principal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        a{
+            color: white;
+            margin: auto;
+        }
+        .navbar-toggler{
+            border: none;
+            margin-right: -55px;
+        }
+    }
+}

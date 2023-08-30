@@ -1,14 +1,16 @@
 footer{
-    position: fixed;
+    position: sticky;
     bottom: 0;
     height: 10vh;
     width: 100%;
-    background-color: $color-secundario;
+    background: linear-gradient(to left,$color-principal, $color-secundario);
     z-index: 97;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     img{
-        width: 33vw;
+        width: 35px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 40%;
     }
 }

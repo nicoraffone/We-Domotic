@@ -1,0 +1,25 @@
+@media (min-width: 768px){
+    .container-fluid{
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        .navbar-nav{
+            a{
+            margin-left: 25px;
+            }
+        }
+    }
+
+    MAIN
+    .section1{
+        h2{
+            span{
+                font-size: 36px;
+            }
+        }
+        ul{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@media (min-width: 1440px) {
+    // .navbar{
+    //     display: flex;
+    //     .nav-container{
+    //         display: none;
+    //     }
+    //     .logo{
+    //         margin-top: 30px;
+    //     }
+    //     .navbar-row{
+    //         display: flex;
+    //         li, a{
+    //             list-style: none;
+    //             text-decoration: none;
+    //             margin: 0 20px;
+    //             color: white;
+    //             font-size: 18px;
+    //         }
+    //     }
+    // }
+
+    //MAIN
+    .section1{
+        margin-top: 2vh;
+    }
+
+    //FOOTER
+    .btn-top{
+        display: inline;
+        left: 97%;
+        bottom: 16vh;
+        img{
+            width: 33px;
+        }
+    }
+    .btn-ig{
+        display: inline;
+    }
+}

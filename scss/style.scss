@@ -1,11 +1,19 @@
 @import "./utilities/mixins";
 @import "./utilities/variables";
 @import "./components/base";
+@import "./utilities/buttons";
 @import "./components/navbar";
 @import "./components/header";
 @import "./components/footer";
 @import "./pages/index";
-@import "./pages/contacto";
+@import "./pages/conocenos";
+@import "./components/media-320";
+@import "./components/media-425";
+@import "./components/media-740";
+@import "./components/media-768";
+@import "./components/media-1024";
+@import "./components/media-1440";
+
 
 
 

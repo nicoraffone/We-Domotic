@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav>
+        <!-- <nav>
             <div class="navbar">
                 <div class="container nav-container">
                     <input type="checkbox" name="menuhamburguesa" />
@@ -35,6 +35,33 @@
                     </div>
                 </div>
                 <img class="logo" src="./Images/logos/fondo.png" />
+                <div class="navbar-row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./pages/conocenos.html">¿Quiénes somos?</a></li>
+                    <li><a href="#">¿Qué es la Domotica?</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Presupuesto</a></li>
+                </div>
+            </div>
+        </nav> -->
+        <!--! NAVBAR-->
+        <nav class="navbar navbar-expand-md bg-body-tertiary navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img class="logo" src="./Images/logos/fondo.png" />
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#">¿Quiénes somos?</a>
+                        <a class="nav-link" href="#">¿Qué es la Domótica?</a>
+                        <a class="nav-link" href="#">Servicios</a>
+                        <a class="nav-link" href="#">Presupuesto</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -42,12 +69,14 @@
     <main>
         <section class="section1">
             <div>
-                <h2>
-                    <span>Simplificá tu vida.</span>
-                    <span>Smarteá tus espacios.</span>
-                </h2>
-                <p>Vas a poder controlar, programar y automatizar tu casa, negocio o salón.</p>
-                <p>Confort, eficiencia y seguridad en tu día a día</p>
+                <div class="first-txt">
+                    <h2>
+                        <span>Simplificá tu vida</span>
+                        <span>Smarteá tus espacios</span>
+                    </h2>
+                    <p>Vas a poder controlar, programar y automatizar tu casa, negocio o salón.</p>
+                    <p>Confort, eficiencia y seguridad en tu día a día</p>
+                </div>
                 <ul>
                     <h3>Aportamos con nuestros servicios:</h3>
                     <li>Comodidad - Adaptabilidad - Accesibilidad</li>
@@ -57,14 +86,175 @@
                 <button>Mas info</button>
             </div>
         </section>
-        <div class="divisor"></div>
-        <section class="section2">
 
-        </section>
+        <div class="divisor"></div>
+
+        <h2 class="title1">Combos inteligentes</h2>
+        <!-- <section class="section2">
+            <div>
+                <img src="./Images/panel.jpg" alt="">
+                <ul>
+                    <p>Combo Animate</p>
+                    <li>Asistente virtual comandado por voz</li>
+                    <li>Control Remoto universal para smartear tus dispositivos de control infrarrojo</li>
+                    <li>Enchufe smart para convertir en inteligente cualquier electrodoméstico</li>
+                    <li>Dos lámparas smart para ambientar tus momentos según la necesidad</li>
+                    <p>- Precio Contado: $184.300 -</p>
+                </ul>
+            </div>
+            <div>
+                <img src="./Images/img1.jpg" alt="">
+                <ul>
+                    <p>Combo Confort</p>
+                    <li>Asistente virtual comandado por voz</li>
+                    <li>Control Remoto universal para smartear tus dispositivos de control infrarrojo</li>
+                    <li>Dos enchufes smart para convertir en inteligente más de un electrodoméstico</li>
+                    <li>Tres lámparas smart para ambientar tus momentos según la necesidad</li>
+                    <li>Humificador inteligente para mantener tus espacios aromatizados en todo momento</li>
+                    <p>- Precio Contado: $298.300 -</p>
+                </ul>
+            </div>
+            <div>
+                <img src="./Images/smarthome.jpg" alt="">
+                <ul>
+                    <p>Combo "Cambiá tu vida"</p>
+                    <li>Asistente virtual comandado por voz</li>
+                    <li>Control Remoto universal para smartear tus dispositivos de control infrarrojo</li>
+                    <li>Tres enchufes smart para convertir en inteligente más de un electrodoméstico</li>
+                    <li>Cuatro lámparas smart para ambientar tus momentos según la necesidad</li>
+                    <li>Humificador inteligente para mantener tus espacios aromatizados en todo momento</li>
+                    <li>Motor wifi de cortina para manejarla de forma remota, programarla por horario o según el clima
+                    </li>
+                    <li>Aspiradora robot para ahorrar tiempo y cuidar la limpieza de tu hogar mientras no estás</li>
+                    <p>- Precio Contado: $887.000 -</p>
+                </ul>
+            </div>
+            <div>
+                <img src="./Images/img3.jpg" alt="">
+                <ul>
+                    <p>Combo Mascotas</p>
+                    <li>Comedero smart + Bebedero inteligente para programar su alimentación e hidratación, por
+                        horarios, porciones y poder cuidar de ellos mientras no estás.
+                    </li>
+                    <p>- Consulte Precio -</p>
+                </ul>
+            </div>
+            <div>
+                <img src="./Images/panel.jpg" alt="">
+                <ul>
+                    <p>Combo Seguridad</p>
+                    <li>Cerradura smart + Cámara interior + sensores de ventana para controlar quién llega, sale o falta
+                        en tu hogar, supervisando la entrada y asegurándote tu tranquilidad.
+                    </li>
+                    <p>- Consulte Precio -</p>
+                </ul>
+            </div>
+        </section> -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Combo Animate
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <img src="./Images/img1.jpg" alt="">
+                        <li>Asistente virtual comandado por voz</li>
+                        <li>Control Remoto universal para smartear tus dispositivos de control infrarrojo</li>
+                        <li>Enchufe smart para convertir en inteligente cualquier electrodoméstico</li>
+                        <li>Dos lámparas smart para ambientar tus momentos según la necesidad</li>
+                        <p>- Precio Contado: $184.300 -</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Combo Confort
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <img src="./Images/img2.jpg" alt="">
+                        <li>Asistente virtual comandado por voz</li>
+                        <li>Control Remoto universal para smartear tus dispositivos de control infrarrojo</li>
+                        <li>Dos enchufes smart para convertir en inteligente más de un electrodoméstico</li>
+                        <li>Tres lámparas smart para ambientar tus momentos según la necesidad</li>
+                        <li>Humificador inteligente para mantener tus espacios aromatizados en todo momento</li>
+                        <p>- Precio Contado: $298.300 -</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Cambiá tu vida
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <img src="./Images/panel.jpg" alt="">
+                        <li>Asistente virtual comandado por voz</li>
+                        <li>Control Remoto universal para smartear tus dispositivos de control infrarrojo</li>
+                        <li>Tres enchufes smart para convertir en inteligente más de un electrodoméstico</li>
+                        <li>Cuatro lámparas smart para ambientar tus momentos según la necesidad</li>
+                        <li>Humificador inteligente para mantener tus espacios aromatizados en todo momento</li>
+                        <li>Motor wifi de cortina para manejarla de forma remota, programarla por horario o según el
+                            clima
+                        </li>
+                        <li>Aspiradora robot para ahorrar tiempo y cuidar la limpieza de tu hogar mientras no estás</li>
+                        <p>- Precio Contado: $887.000 -</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Combo Mascotas
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <img src="./Images/img3.jpg" alt="">
+                        <li>Comedero smart + Bebedero inteligente para programar su alimentación e hidratación, por
+                            horarios, porciones y poder cuidar de ellos mientras no estás.
+                        </li>
+                        <p>- Consulte Precio -</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Combo Seguridad
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <img src="./Images/img1.jpg" alt="">
+                        <li>Cerradura smart + Cámara interior + sensores de ventana para controlar quién llega, sale o
+                            falta
+                            en tu hogar, supervisando la entrada y asegurándote tu tranquilidad.
+                        </li>
+                        <p>- Consulte Precio -</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <a href="#" class="btn-top"><img src="./Images/logos/top.png" alt=""></a>
+    <a href="" class="btn-ig"><img src="./Images/logos/ig-xl.png" alt=""></a>
     <footer>
-        <img src="./Images/logos/logos-contact.png" alt="">
+        <img src="./Images/logos/ig.png" alt="">
+        <img src="./Images/logos/wsp.png" alt="">
+        <img src="./Images/logos/fb2.png" alt="">
     </footer>
 
 
