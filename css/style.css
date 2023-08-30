@@ -195,7 +195,7 @@ main {
   background: linear-gradient(to left, #1b2d6f, #44d8a4); }
 
 .section1 {
-  background-image: url("./images/img3.jpg");
+  background-image: url("../images/img3.jpg");
   background-attachment: fixed;
   background-position: center;
   background-position-y: 40%;
