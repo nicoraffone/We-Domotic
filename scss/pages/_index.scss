@@ -1,5 +1,5 @@
 main{
-    margin-top: -30px;
+    padding-top: 110px;
 }
 
 .divisor{
@@ -25,6 +25,7 @@ main{
             margin-top: 30px;
             display: flex;
             flex-direction: column;
+            margin-bottom: 30px;
             span{
                 font-weight: bold;
                 font-size: 8vw;
@@ -55,7 +56,7 @@ main{
             margin-top: 30px;
             background: $color-principal;
             height: 40px;
-            width: 30%;
+            width: 40%;
             max-width: 150px;
             border-style: double;
             border-width: 3.5px;
