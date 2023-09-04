@@ -143,8 +143,8 @@ footer {
   margin-top: 30px;
   background: #1b2d6f;
   height: 40px;
-  width: 40%;
-  max-width: 150px;
+  width: 120px;
+  max-width: 160px;
   border-style: double;
   border-width: 3.5px;
   border-color: #44d8a4;
@@ -247,11 +247,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .section3 hr {
-    size: 10px;
-    border: 3px solid #44d8a4;
-    margin: 0;
-    width: 100%; }
   .section3 div {
     display: flex;
     flex-direction: column;
@@ -266,11 +261,68 @@ footer {
       font-size: 15px; }
   .section3 button {
     font-size: 15px;
-    width: 75%; }
+    width: 160px; }
+
+.hr1 {
+  size: 10px;
+  border: 3px solid #44d8a4;
+  margin: 0;
+  width: 100%; }
 
 .div-bot {
   width: 100%;
   height: 100px;
+  background-color: #d6d6d6; }
+
+.section-conocenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-conocenos h2 {
+    margin: 30px 0;
+    color: #1b2d6f;
+    font-weight: bold;
+    text-shadow: 1.4px 1.4px rgba(68, 216, 164, 0.74);
+    font-size: 27px; }
+  .section-conocenos p {
+    width: 85%;
+    color: #1b2d6f;
+    font-size: 15px;
+    margin-top: 10px; }
+
+.section-conocenos2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-conocenos2 hr {
+    border-color: #1b2d6f; }
+  .section-conocenos2 p {
+    width: 85%;
+    color: #1b2d6f;
+    font-size: 15px;
+    margin: 15px 0; }
+
+.main-conocenos {
+  padding-bottom: 80px;
+  background-color: #d6d6d6; }
+
+.section-domotica {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section-domotica h2 {
+    margin: 30px auto;
+    color: #1b2d6f;
+    font-weight: bold;
+    text-shadow: 1.4px 1.4px rgba(68, 216, 164, 0.74);
+    font-size: 22px;
+    text-align: center; }
+  .section-domotica p {
+    width: 85%;
+    color: #1b2d6f;
+    font-size: 15px; }
+
+.main-domotica {
   background-color: #d6d6d6; }
 
 @media (min-width: 425px) {
