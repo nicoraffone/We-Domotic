@@ -103,13 +103,17 @@ footer {
   background: linear-gradient(to left, #1b2d6f, #44d8a4); }
 
 .section1 {
-  background-image: url("../Images/img3.jpg");
+  background-image: url("../Images/backgr1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-position-y: 40%;
-  background-size: cover;
+  background-size: 430%;
+  background-repeat: no-repeat;
+  animation: mov 10s infinite ease-in-out alternate;
   text-align: center; }
   .section1 .bgrnd {
+    width: 100%;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.404); }
   .section1 div {
     display: flex;
@@ -133,6 +137,7 @@ footer {
         text-shadow: 1.4px 1.4px rgba(68, 216, 164, 0.74); }
     .section1 div p {
       color: #1b2d6f;
+      text-shadow: 0.2px 0.2px black;
       font-size: 14px;
       font-weight: bold;
       margin: auto;
@@ -141,24 +146,30 @@ footer {
       margin-top: 30px;
       color: #1b2d6f;
       text-align: center;
-      list-style: none; }
+      list-style: none;
+      text-shadow: 0.2px 0.2px black; }
       .section1 div .second-txt h3 {
         font-size: 14px;
         font-weight: bold; }
       .section1 div .second-txt p {
-        font-weight: 420; }
+        font-weight: bold; }
+
+@keyframes mov {
+  from {
+    background-position: bottom left; }
+  to {
+    background-position: top right; } }
 
 .btn1 {
-  color: white;
+  color: #1b2d6f;
   font-size: 20px;
+  font-weight: bold;
   margin-top: 30px;
-  background: #1b2d6f;
+  background: transparent;
   height: 40px;
   width: 120px;
   max-width: 160px;
-  border-style: double;
-  border-width: 3.5px;
-  border-color: #44d8a4;
+  border: 4px solid #1b2d6f;
   border-radius: 15px;
   margin-bottom: 20px; }
 
@@ -286,7 +297,7 @@ footer {
 
 .div-bot {
   width: 100%;
-  height: 100px;
+  height: 200px;
   background-color: #d6d6d6; }
 
 .section-conocenos {
@@ -369,8 +380,10 @@ footer {
     left: 99%; } }
 
 @media (min-width: 425px) {
-  .section1 h2 span {
-    font-size: 30px; }
+  .section1 {
+    background-size: 370%; }
+    .section1 h2 span {
+      font-size: 30px; }
   .btn-ig, .btn-top, .btn-wsp {
     left: 91%; } }
 
@@ -381,13 +394,15 @@ footer {
     flex-direction: column; }
     .container-fluid .navbar-nav a {
       margin-left: 25px; }
-  .section1 h2 {
-    padding-top: 50px; }
-    .section1 h2 span {
-      font-size: 55px; }
-  .section1 ul {
-    width: 100%;
-    text-align: center; }
+  .section1 {
+    background-size: 220%; }
+    .section1 h2 {
+      padding-top: 50px; }
+      .section1 h2 span {
+        font-size: 55px; }
+    .section1 ul {
+      width: 100%;
+      text-align: center; }
   .title1 {
     font-size: 30px;
     padding: 40px 0; }
@@ -409,6 +424,8 @@ footer {
           font-size: 12px; }
   .accordion {
     display: none; }
+  .nociones-txt {
+    padding-bottom: 100px; }
   .banner-ig {
     display: flex;
     flex-direction: row;
@@ -428,11 +445,23 @@ footer {
   .btn-wsp {
     bottom: 11vh; } }
 
+@media (min-width: 768px) {
+  .section-conocenos h2 {
+    margin-top: 60px;
+    font-size: 30px; }
+  .section-conocenos p {
+    width: 78%; }
+  .section-conocenos img {
+    width: 60%;
+    object-fit: contain; } }
+
 @media (min-width: 1024px) {
-  .section1 div {
-    text-align: center; }
-    .section1 div h2 {
-      text-align: left; }
+  .section1 {
+    background-size: 170%; }
+    .section1 div {
+      text-align: center; }
+      .section1 div h2 {
+        text-align: left; }
   .section2 {
     grid-template-columns: repeat(3, 1fr); }
     .section2 div:nth-child(4), .section2 div:nth-child(5) {
@@ -454,7 +483,8 @@ footer {
 
 @media (min-width: 1440px) {
   .section1 {
-    margin-top: 2vh; }
+    margin-top: 2vh;
+    background-size: 135%; }
     .section1 div h2 span {
       font-size: 80px; }
     .section1 div p {
