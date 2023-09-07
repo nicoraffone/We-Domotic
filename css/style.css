@@ -104,9 +104,6 @@ footer {
 
 .section1 {
   background-image: url("../Images/backgr1.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-position-y: 40%;
   background-size: 430%;
   background-repeat: no-repeat;
   animation: mov 10s infinite ease-in-out alternate;
