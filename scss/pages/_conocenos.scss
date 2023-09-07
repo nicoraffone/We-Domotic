@@ -12,8 +12,13 @@
     p{
         width: 85%;
         color: $color-principal;
-        font-size: 15px;
+        font-size: 17px;
         margin-top: 10px;
+    }
+    img{
+        width: 70%;
+        max-height: 240px;
+        object-fit: cover;
     }
 }
 
@@ -21,18 +26,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px 20px;
+    div{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+        p{
+            color: $color-principal;
+            font-size: 15px;
+        }
+        img{
+            max-height: 200px;
+            max-width: 170px;
+            object-fit: cover;
+        }
+    }
     hr{
         border-color: $color-principal;
     }
-    p{
-        width: 85%;
-        color: $color-principal;
-        font-size: 15px;
-        margin: 15px 0;
-    }
+}
+
+.last-txt{
+    padding: 0 15px;
+}
+
+.last-txt:first-of-type{
+    border-right: 2px solid $secundario-opacity;
 }
 
 .main-conocenos{
     padding-bottom: 80px;
-    background-color: rgb(214, 214, 214);
 }

@@ -9,6 +9,9 @@ body {
 a {
   text-decoration: none; }
 
+img {
+  width: 100%; }
+
 .btn-top, .btn-wsp {
   position: fixed;
   bottom: 21vh;
@@ -193,12 +196,11 @@ footer {
       font-size: 18px;
       font-weight: bold; }
     .section2 div img {
-      width: 100%; }
+      width: 100%;
+      border-radius: 20px; }
     .section2 div ul li {
       font-size: 14px;
       margin-bottom: 5px; }
-    .section2 div ul p {
-      align-items: end; }
 
 .accordion {
   max-width: 800px;
@@ -215,21 +217,22 @@ footer {
   .accordion-item button:active, .accordion-item button:focus {
     background-color: rgba(68, 216, 164, 0.1); }
 
-.accordion-body img {
-  width: 100%;
-  max-width: 450px;
-  max-height: 280px;
-  margin-bottom: 15px;
-  object-fit: cover; }
-
-.accordion-body li {
-  margin: 8px 0;
-  font-size: 15px; }
-
-.accordion-body p {
-  font-weight: bold;
-  margin-top: 13px;
-  font-size: 16px; }
+.accordion-body {
+  color: #1b2d6f; }
+  .accordion-body img {
+    width: 100%;
+    max-width: 450px;
+    max-height: 280px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 15px; }
+  .accordion-body li {
+    margin: 8px 0;
+    font-size: 15px; }
+  .accordion-body p {
+    font-weight: bold;
+    margin-top: 13px;
+    font-size: 16px; }
 
 .banner-ig {
   background: linear-gradient(to left, #1b2d6f, #44d8a4);
@@ -299,24 +302,41 @@ footer {
   .section-conocenos p {
     width: 85%;
     color: #1b2d6f;
-    font-size: 15px;
+    font-size: 17px;
     margin-top: 10px; }
+  .section-conocenos img {
+    width: 70%;
+    max-height: 240px;
+    object-fit: cover; }
 
 .section-conocenos2 {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin: 10px 20px; }
+  .section-conocenos2 div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px; }
+    .section-conocenos2 div p {
+      color: #1b2d6f;
+      font-size: 15px; }
+    .section-conocenos2 div img {
+      max-height: 200px;
+      max-width: 170px;
+      object-fit: cover; }
   .section-conocenos2 hr {
     border-color: #1b2d6f; }
-  .section-conocenos2 p {
-    width: 85%;
-    color: #1b2d6f;
-    font-size: 15px;
-    margin: 15px 0; }
+
+.last-txt {
+  padding: 0 15px; }
+
+.last-txt:first-of-type {
+  border-right: 2px solid rgba(68, 216, 164, 0.4); }
 
 .main-conocenos {
-  padding-bottom: 80px;
-  background-color: #d6d6d6; }
+  padding-bottom: 80px; }
 
 .section-domotica {
   display: flex;
@@ -381,7 +401,8 @@ footer {
       width: 93%;
       height: 600px; }
       .section2 div img {
-        margin: 0 auto; }
+        margin: 0 auto;
+        border: 2px solid #1b2d6f; }
       .section2 div ul {
         margin: auto; }
         .section2 div ul li {
@@ -445,20 +466,32 @@ footer {
       object-fit: cover; }
     .section2 div ul li {
       font-size: 12px; }
-    .section2 div div:nth-child(4), .section2 div div:nth-child(5) {
-      height: 550px; }
+  .section2 div:nth-child(4), .section2 div:nth-child(5) {
+    height: 500px; }
   .section3 section {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    margin: 0 30px; }
     .section3 section .nociones-txt {
       width: 50%; }
       .section3 section .nociones-txt hr {
-        width: 70%;
-        margin: auto; }
+        width: 80%;
+        border-width: 5px;
+        margin: auto;
+        border-radius: 50%; }
     .section3 section img {
-      display: inline;
-      height: 1000px;
+      display: initial; }
+  .s3-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .s3-imgs div {
       margin: auto; }
+      .s3-imgs div img {
+        height: 360px;
+        object-fit: cover;
+        border-radius: 20px;
+        border: 2px solid #1b2d6f; }
   .btn1 {
     height: 50px;
     width: 150px;
