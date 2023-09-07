@@ -3,18 +3,67 @@
     //MAIN
     .section1{
         margin-top: 2vh;
-    }
-
-    //FOOTER
-    .btn-top{
-        display: inline;
-        left: 97%;
-        bottom: 16vh;
-        img{
-            width: 33px;
+        div{
+        h2{
+            span{
+                font-size: 80px;
+            }
+        }
+        p{
+            font-size: 18px;
         }
     }
+    }
+
+    .section2{
+        div{
+            height: 650px;
+            img{
+                max-height: 300px;
+                object-fit: cover;
+            }
+            ul{
+                li{
+                    font-size: 12px;
+                }
+            }
+        }
+        div:nth-child(4), div:nth-child(5){
+            height: 550px;
+        }
+    }
+
+    .btn1{
+        height: 50px;
+        width: 150px;
+        font-size: 22px;
+    }
+
+    .banner-ig{
+        height: 200px;
+        p{
+            font-size: 38px;
+        }
+        img{
+            width: 120px;
+        }
+    }
+
+    //BUTTONS
+    .btn-top, .btn-ig{
+        left: 97%;
+        img{
+            width: 45px;
+        }
+    }
+
+    .btn-top{
+        bottom: 24vh;
+    }
     .btn-ig{
-        display: inline;
+        bottom: 17.5vh;
+    }
+    .btn-wsp{
+        bottom: 11vh;
     }
 }

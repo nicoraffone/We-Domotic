@@ -13,8 +13,9 @@
     //MAIN
     .section1{
         h2{
+            padding-top: 50px;
             span{
-                font-size: 36px;
+                font-size: 55px;
             }
         }
         ul{
@@ -24,18 +25,20 @@
     }
 
     .title1{
-        margin-bottom: 30px;
+        font-size: 30px;
+        padding: 40px 0;
     }
 
 
     .section2{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-gap: auto;
+        grid-gap: 30px;
+        background-color: rgb(214, 214, 214);
         div{
             margin: auto;
-            width: 400px;
-            height: 550px;
+            width: 93%;
+            height: 600px;
             img{
                 margin: 0 auto;
             }
@@ -49,5 +52,23 @@
     }
     .accordion{
         display: none;
+    }
+
+    .banner-ig{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        p{
+            font-size: 23px;
+        }
+        img{
+            width: 80px;
+        }
+    }
+
+    //BUTTONS
+
+    .btn-top, .btn-ig{
+        left: 95%;
     }
 }
