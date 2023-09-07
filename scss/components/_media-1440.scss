@@ -16,7 +16,7 @@
     }
 
     .section2{
-        div{
+            div{
             height: 650px;
             img{
                 max-height: 300px;
@@ -27,9 +27,28 @@
                     font-size: 12px;
                 }
             }
-        }
-        div:nth-child(4), div:nth-child(5){
+            div:nth-child(4), div:nth-child(5){
             height: 550px;
+        }
+        }
+    }
+
+    .section3{
+        section{
+            display: flex;
+            flex-direction: row;
+            .nociones-txt{
+                width: 50%;
+                hr{
+                    width: 70%;
+                    margin: auto;
+                }
+            }
+            img{
+                display: inline;
+                height: 1000px;
+                margin: auto;
+            }
         }
     }
 

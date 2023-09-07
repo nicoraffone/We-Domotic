@@ -71,4 +71,16 @@
     .btn-top, .btn-ig{
         left: 95%;
     }
+
+    @media (orientation: landscape) {
+        .btn-top{
+            bottom: 23vh;
+        }
+        .btn-ig{
+            bottom: 17vh;
+        }
+        .btn-wsp{
+            bottom: 11vh;
+        }
+    }
 }

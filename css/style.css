@@ -257,17 +257,19 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .section3 div {
+  .section3 section img {
+    display: none; }
+  .section3 .nociones-txt div {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 85%;
     margin: auto; }
-    .section3 div h4 {
+    .section3 .nociones-txt div h4 {
       text-decoration: underline;
       margin: 20px 0;
       font-size: 18px; }
-    .section3 div p {
+    .section3 .nociones-txt div p {
       font-size: 15px; }
   .section3 button {
     font-size: 15px;
@@ -335,6 +337,17 @@ footer {
 .main-domotica {
   background-color: #d6d6d6; }
 
+@media (orientation: landscape) {
+  .btn-top, .btn-wsp {
+    bottom: 32.5vh;
+    left: 99%; }
+  .btn-ig {
+    bottom: 22vh;
+    left: 99%; }
+  .btn-wsp {
+    bottom: 11vh;
+    left: 99%; } }
+
 @media (min-width: 425px) {
   .section1 h2 span {
     font-size: 30px; }
@@ -386,6 +399,14 @@ footer {
   .btn-top, .btn-wsp, .btn-ig {
     left: 95%; } }
 
+@media (min-width: 768px) and (orientation: landscape) {
+  .btn-top, .btn-wsp {
+    bottom: 23vh; }
+  .btn-ig {
+    bottom: 17vh; }
+  .btn-wsp {
+    bottom: 11vh; } }
+
 @media (min-width: 1024px) {
   .section1 div {
     text-align: center; }
@@ -424,8 +445,20 @@ footer {
       object-fit: cover; }
     .section2 div ul li {
       font-size: 12px; }
-  .section2 div:nth-child(4), .section2 div:nth-child(5) {
-    height: 550px; }
+    .section2 div div:nth-child(4), .section2 div div:nth-child(5) {
+      height: 550px; }
+  .section3 section {
+    display: flex;
+    flex-direction: row; }
+    .section3 section .nociones-txt {
+      width: 50%; }
+      .section3 section .nociones-txt hr {
+        width: 70%;
+        margin: auto; }
+    .section3 section img {
+      display: inline;
+      height: 1000px;
+      margin: auto; }
   .btn1 {
     height: 50px;
     width: 150px;
