@@ -10,6 +10,10 @@
     }
     }
 
+    .title1{
+        font-size: 35px;
+    }
+
     .section2{
         grid-template-columns: repeat(3,1fr);
         div:nth-child(4), div:nth-child(5){
@@ -28,20 +32,20 @@
 
     //BUTTONS
 
-    .btn-top, .btn-ig{
-        left: 96%;
+    .btn-top, .btn-ig, .btn-wsp{
+        left: 95%;
         img{
-            width: 37px;
+            width: 40px;
         }
     }
+    
     .btn-top{
-        bottom: 23vh;
+        bottom: 19vh;
     }
     .btn-ig{
-        bottom: 17vh;
+        bottom: 15vh;
     }
     .btn-wsp{
         bottom: 11vh;
     }
-
 }

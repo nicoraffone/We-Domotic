@@ -2,7 +2,7 @@
 
     //MAIN
     .section1{
-        margin-top: 2vh;
+        padding-top: 10px;
         background-size: 135%;
         div{
         h2{
@@ -14,6 +14,10 @@
             font-size: 18px;
         }
     }
+    }
+
+    .title1:first-of-type{
+        font-size: 45px;
     }
 
     .section2{
@@ -86,8 +90,8 @@
     }
 
     //BUTTONS
-    .btn-top, .btn-ig{
-        left: 97%;
+    .btn-top, .btn-ig, .btn-wsp{
+        left: 96%;
         img{
             width: 45px;
         }
