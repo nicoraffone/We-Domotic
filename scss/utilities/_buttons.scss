@@ -1,6 +1,6 @@
 .btn-top {
 	position: fixed;
-	bottom: 21vh;
+	bottom: 6.4vh;
 	left: 87%;
 	transition: all 300ms ease 0ms;
 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -20,26 +20,26 @@
 	transform: translateY(-7px);
 }
 
-.btn-ig{
-    position: fixed;
-	bottom: 16vh;
-	left: 87%;
-	transition: all 300ms ease 0ms;
-	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    border: 2px solid;
-	border-radius: 50%;
-    border-color: black;
-	z-index: 100;
-    img{
-        width: 35px;
-    }
-}
+// .btn-ig{
+//     position: fixed;
+// 	bottom: 16vh;
+// 	left: 87%;
+// 	transition: all 300ms ease 0ms;
+// 	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+//     border-radius: 10px;
+//     border: 2px solid;
+// 	border-radius: 50%;
+//     border-color: black;
+// 	z-index: 100;
+//     img{
+//         width: 35px;
+//     }
+// }
 
-.btn-ig:hover {
-	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
-	transform: translateX(-7px);
-}
+// .btn-ig:hover {
+// 	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+// 	transform: translateX(-7px);
+// }
 
 .btn-wsp{
 	position: fixed;
@@ -51,7 +51,7 @@
 	border-radius: 50%;
     border-color: black;
 	z-index: 100;
-	bottom: 11vh;
+	bottom: 1vh;
 	background-color: white;
 	img{
         width: 35px;

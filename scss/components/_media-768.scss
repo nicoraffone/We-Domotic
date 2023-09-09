@@ -78,21 +78,56 @@
         }
     }
 
+
+    //FOOTER
+    footer{
+        .footer-list{
+            margin-bottom: -130px;
+            span:nth-of-type(2){
+                margin-left: 60px;
+            }
+            section{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .map{
+            margin-top: -30px;
+            margin-bottom: -70px;
+        }
+        .redes-f{
+            width: 50%;
+            align-self: flex-start;
+            margin-left: 5%;
+            margin-top: -60px;
+        }
+    }
+
+
     //BUTTONS
 
-    .btn-top, .btn-ig, .btn-wsp{
+    .btn-top, .btn-wsp{
         left: 94%;
+        img{
+            width: 40px;
+        }
     }
 
     @media (orientation: landscape) {
         .btn-top{
-            bottom: 23vh;
+            bottom: 14vh;
+            img{
+                width: 40px;
+            }
         }
-        .btn-ig{
-            bottom: 17vh;
-        }
+        // .btn-ig{
+        //     bottom: 17vh;
+        // }
         .btn-wsp{
-            bottom: 11vh;
+            bottom: 1.5vh;
+            img{
+                width: 40px;
+            }
         }
     }
 
