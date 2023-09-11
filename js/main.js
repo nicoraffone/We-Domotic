@@ -20,3 +20,29 @@ window.onscroll = function(){
         buttonUp.style.transform ="scale(0)"
     }
 }
+
+//! TIMER
+
+const countDownDate = new Date("Sep 18, 2023 00:00:00").getTime();
+const x = setInterval(function(){
+    let now = new Date().getTime();
+    let distance = countDownDate - now;
+
+    let days = Math.floor(distance / (1000 * 60 * 60 *24));
+    let hours = Math.floor((distance % (1000 * 60 * 60 *24)) / (1000 * 60 * 60));
+    let min = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    let sec = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("min").innerHTML = min;
+    document.getElementById("sec").innerHTML = sec;
+
+    if(distance < 0){
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("min").innerHTML = "00";
+        document.getElementById("sec").innerHTML = "00";
+    }
+},1000)
