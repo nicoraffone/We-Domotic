@@ -1,4 +1,12 @@
 @media (min-width: 1440px) {
+    header{
+        padding-bottom: 190px;
+        .navbar{
+            img{
+                width: 220px;
+            }
+    }
+    }
 
     //MAIN
     .section1{
@@ -25,7 +33,6 @@
     .title1:first-of-type{
         font-size: 45px;
     }
-
     .timer{
         width: 40%;
         div{
@@ -40,20 +47,27 @@
 
     .section2{
             div{
-                height: 750px;
+                height: 820px;
+                p:nth-of-type(1){
+                    font-size: 22px;
+                }
             img{
                 height: 300px;
             }
             ul{
+                margin-top: 20px;
                 li{
-                    font-size: 12px;
+                    font-size: 14px;
                 }
             }
         }
         div:nth-child(4), div:nth-child(5){
-        height: 500px;
+        height: 600px;
         ul{
             margin: 10px auto;
+        }
+        a{
+            justify-self: end;
         }
         }
     }
@@ -64,16 +78,19 @@
             flex-direction: row;
             margin: 0 30px;
             .nociones-txt{
-                width: 50%;
+                width: 33%;
+                p{
+                    width: 100%;
+                }
                 hr{
-                    width: 80%;
+                    width: 90%;
                     border-width: 5px;
                     margin: auto;
                     border-radius: 50%;
                 }
             }
             img{
-                display: initial;
+                display: flex;
             }
         }
         button{
@@ -85,13 +102,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 33%;
         div{
             margin: auto;
             img{
                 height: 360px;
+                max-width: 478px;
                 object-fit: cover;
                 border-radius: 20px;
-                border: 2px solid $color-principal;
             }
         }
     }
@@ -101,7 +119,6 @@
         width: 150px;
         font-size: 22px;
     }
-
     .banner-ig{
         height: 200px;
         p{
@@ -111,7 +128,6 @@
             width: 120px;
         }
     }
-
 
     //FOOTER
 
@@ -148,14 +164,70 @@
             width: 50px;
         }
     }
-
     .btn-top{
         bottom: 9vh;
     }
-    // .btn-ig{
-    //     bottom: 17.5vh;
-    // }
     .btn-wsp{
         bottom: 1.4vh;
+    }
+
+    // CONOCENOS
+
+    .section-conocenos{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        margin-bottom: 50px;
+    }
+
+    .section-conocenos2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        div{
+            margin: 10px auto;
+            p{
+                margin: 20px;
+                width: 50%;
+                font-size: 17px;
+            }
+        }
+        div:nth-of-type(1),div:nth-of-type(2){
+            border-bottom: 2px solid $color-secundario;
+            height: 200px;
+        }
+        hr{
+            display: none;
+        }
+    }
+
+    //DOMOTICA
+
+    .section-domotica{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        div{
+            height: 100%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h2{
+                font-size: 32px;
+            }
+            p{
+                font-size: 17px;
+            }
+            img{
+                height: 430px;
+                margin-top: 20px;
+                margin-bottom: 50px;
+            }
+        }
+        div:nth-of-type(1){
+            border-bottom: 10px solid $secundario-opacity;
+        }
+        div:nth-of-type(2){
+            border-bottom: 10px solid $secundario-opacity;
+        }
     }
 }

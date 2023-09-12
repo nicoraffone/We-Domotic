@@ -1,4 +1,5 @@
 .section-conocenos{
+    div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +22,7 @@
         max-height: 240px;
         object-fit: cover;
     }
+}
 }
 
 .section-conocenos2{
