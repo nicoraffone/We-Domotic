@@ -146,6 +146,17 @@
     }
 }
 
+.combos-txt{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+    p{
+        color: $color-principal;
+        font-weight: 450;
+    }
+}
+
 .section2{
     text-align: center;
     display: flex;

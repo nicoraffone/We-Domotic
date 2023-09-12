@@ -46,3 +46,21 @@ const x = setInterval(function(){
         document.getElementById("sec").innerHTML = "00";
     }
 },1000)
+
+//! CERRAR NAVBAR AL CLICKEAR
+
+document.addEventListener("DOMContentLoaded", function () {
+    let navbarToggler = document.querySelector(".navbar-toggler");
+    let navbarCollapse = document.querySelector(".navbar-collapse");
+
+    let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    navLinks.forEach(function (navLink) {
+        navLink.addEventListener("click", function () {
+            
+            if (navbarCollapse.classList.contains("show")) {
+                
+                navbarToggler.click();
+            }
+        });
+    });
+});
