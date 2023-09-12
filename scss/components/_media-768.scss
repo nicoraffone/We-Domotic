@@ -19,42 +19,66 @@
     //MAIN
     .section1{
         background-size: 220%;
+        .bgrnd{
+            padding-top: -50px;
+            a{
+                margin-top: 100px;
+                margin-bottom: -50px;
+            }
+        }
+        div{
         h2{
             padding-top: 50px;
             span{
                 font-size: 55px;
             }
         }
-        ul{
-            width: 100%;
-            text-align: center;
+        p{
+            font-size: 18px;
+        }
         }
     }
+
 
     .title1{
         font-size: 30px;
         padding: 40px 0;
     }
 
+    .title1:nth-of-type(2){
+        font-size: 37px;
+    }
+
+    .timer{
+        width: 60%;
+        div{
+            p{
+            font-size: 55px;
+            }
+        }
+    }
 
     .section2{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-gap: 30px;
-        background-color: rgb(214, 214, 214);
         div{
             margin: auto;
             width: 93%;
-            height: 600px;
+            height: 700px;
             img{
-                margin: 0 auto;
+                margin: 10px auto;
                 border: 2px solid $color-principal;
+                height: 210px;
             }
             ul{
                 margin: auto;
                 li{
                     font-size: 12px;
                 }
+            }
+            button{
+                width: 230px;
             }
         }
     }

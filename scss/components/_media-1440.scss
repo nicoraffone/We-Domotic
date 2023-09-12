@@ -2,16 +2,22 @@
 
     //MAIN
     .section1{
-        padding-top: 10px;
         background-size: 135%;
+        .bgrnd{
+            a{
+                margin-top: 30px;
+            }
+        }
         div{
         h2{
+            width: 90%;
             span{
-                font-size: 80px;
+                font-size: 75px;
             }
         }
         p{
-            font-size: 18px;
+            font-size: 20px;
+            width: 90%;
         }
     }
     }
@@ -20,12 +26,23 @@
         font-size: 45px;
     }
 
+    .timer{
+        width: 40%;
+        div{
+            p{
+            font-size: 62px;
+            }
+            span{
+            font-size: 22px;
+            }
+        }
+    }
+
     .section2{
             div{
-            height: 650px;
+                height: 750px;
             img{
-                max-height: 300px;
-                object-fit: cover;
+                height: 300px;
             }
             ul{
                 li{
@@ -35,6 +52,9 @@
         }
         div:nth-child(4), div:nth-child(5){
         height: 500px;
+        ul{
+            margin: 10px auto;
+        }
         }
     }
 
@@ -55,6 +75,9 @@
             img{
                 display: initial;
             }
+        }
+        button{
+            width: 180px;
         }
     }
 

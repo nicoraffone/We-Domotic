@@ -63,8 +63,7 @@ header {
     height: 120px;
     background-color: #1b2d6f; }
     header .navbar img {
-      width: 140px;
-      max-width: 200px;
+      width: 160px;
       margin: auto; }
   header .container-fluid {
     background-color: #1b2d6f;
@@ -173,11 +172,18 @@ footer {
   background-repeat: no-repeat;
   animation: mov 25s infinite ease-in-out alternate;
   text-align: center;
-  margin-top: 120px; }
+  margin-top: 30px;
+  height: 95vh; }
   .section1 .bgrnd {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.404); }
+    .section1 .bgrnd a {
+      margin-top: 60px; }
+      .section1 .bgrnd a button {
+        height: 55px;
+        width: 150px;
+        font-size: 24px; }
   .section1 div {
     display: flex;
     flex-direction: column;
@@ -193,28 +199,33 @@ footer {
     .section1 div h2 {
       margin: 20px auto;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      width: 82%; }
       .section1 div h2 span {
         font-weight: bold;
+        font-size: 35px;
         text-shadow: 1.4px 1.4px rgba(68, 216, 164, 0.74); }
     .section1 div p {
       color: #1b2d6f;
       text-shadow: 0.2px 0.2px black;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: bold;
       margin: auto;
       width: 82%; }
-    .section1 div .second-txt {
-      margin-top: 30px;
-      color: #1b2d6f;
-      text-align: center;
-      list-style: none;
-      text-shadow: 0.2px 0.2px black; }
-      .section1 div .second-txt h3 {
-        font-size: 14px;
-        font-weight: bold; }
-      .section1 div .second-txt p {
-        font-weight: bold; }
+
+.second-txt {
+  margin: auto;
+  margin-top: 10px;
+  color: #1b2d6f;
+  text-align: center;
+  list-style: none;
+  text-shadow: 0.2px 0.2px black;
+  width: 90%; }
+  .second-txt h3 {
+    background: none;
+    font-size: 25px; }
+  .second-txt p {
+    font-weight: bold; }
 
 @keyframes mov {
   from {
@@ -230,7 +241,6 @@ footer {
   background: transparent;
   height: 40px;
   width: 120px;
-  max-width: 160px;
   border: 4px solid #1b2d6f;
   border-radius: 15px;
   margin-bottom: 20px; }
@@ -248,28 +258,29 @@ footer {
   font-weight: bold;
   padding: 20px 10px;
   text-align: center;
-  background-color: #d6d6d6;
   margin: 0; }
 
 .title1:nth-of-type(2) {
   margin-top: -35px;
   font-size: 22px;
   color: red;
-  text-shadow: 1.4px 1.4px yellow; }
+  -webkit-text-stroke: 0.7px black; }
 
 .timer {
   display: flex;
-  justify-content: space-around;
-  background-color: #d6d6d6;
-  padding-bottom: 30px; }
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 10px; }
   .timer div {
     text-align: center; }
     .timer div p {
       font-size: 30px;
       font-weight: bold;
       color: red;
-      text-shadow: 1.4px 1.4px yellow;
-      margin-bottom: -7px; }
+      margin-bottom: -7px;
+      -webkit-text-stroke: 1.5px black; }
     .timer div span {
       color: #1b2d6f;
       font-weight: 600; }
@@ -286,7 +297,6 @@ footer {
   .section2 div {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: left; }
     .section2 div p {
@@ -294,32 +304,36 @@ footer {
       font-weight: bold; }
     .section2 div img {
       width: 100%;
-      border-radius: 20px; }
+      border-radius: 20px;
+      height: 180px;
+      object-fit: cover; }
     .section2 div ul li {
       font-size: 14px;
       margin-bottom: 5px; }
+    .section2 div a {
+      justify-self: end; }
 
 .accordion {
   max-width: 800px;
   margin: auto; }
 
 .accordion-item {
-  background: linear-gradient(to left, rgba(27, 45, 111, 0.4), rgba(68, 216, 164, 0.4));
+  background: white;
   z-index: 10;
   margin-top: 0; }
   .accordion-item button {
     font-weight: bold;
     color: #1b2d6f;
-    background-color: rgba(68, 216, 164, 0.1); }
+    background-color: white; }
   .accordion-item button:active, .accordion-item button:focus {
-    background-color: rgba(68, 216, 164, 0.1); }
+    background-color: white; }
 
 .accordion-body {
   color: #1b2d6f; }
   .accordion-body img {
     width: 100%;
     max-width: 450px;
-    max-height: 280px;
+    max-height: 330px;
     margin-bottom: 15px;
     object-fit: cover;
     border-radius: 15px; }
@@ -330,6 +344,10 @@ footer {
     font-weight: bold;
     margin-top: 13px;
     font-size: 16px; }
+  .accordion-body a {
+    margin-left: 27%; }
+    .accordion-body a button {
+      width: 190px; }
 
 .banner-ig {
   background: linear-gradient(to left, #1b2d6f, #44d8a4);
@@ -354,10 +372,10 @@ footer {
 
 .section3 {
   color: #1b2d6f;
-  background-color: #d6d6d6;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 20px; }
   .section3 section img {
     display: none; }
   .section3 .nociones-txt div {
@@ -384,14 +402,13 @@ footer {
 
 .div-bot {
   width: 100%;
-  height: 200px;
-  background-color: #d6d6d6; }
+  height: 200px; }
 
 .section-conocenos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 120px; }
+  margin-top: 20px; }
   .section-conocenos h2 {
     margin: 30px 0;
     color: #1b2d6f;
@@ -436,12 +453,22 @@ footer {
   border-right: 2px solid rgba(68, 216, 164, 0.4); }
 
 .main-conocenos {
-  padding-bottom: 80px; }
+  padding-bottom: 20px; }
 
 .section-domotica {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .section-domotica div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; }
+    .section-domotica div img {
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px; }
   .section-domotica h2 {
     margin: 30px auto;
     color: #1b2d6f;
@@ -450,13 +477,11 @@ footer {
     font-size: 22px;
     text-align: center; }
   .section-domotica p {
-    width: 85%;
     color: #1b2d6f;
     font-size: 15px; }
 
 .main-domotica {
-  padding-top: 150px;
-  margin-bottom: 100px; }
+  margin-bottom: 30px; }
 
 @media (min-width: 425px) {
   .section1 {
@@ -479,32 +504,44 @@ footer {
       text-shadow: 0px 30px 25px #44d8a4; }
   .section1 {
     background-size: 220%; }
-    .section1 h2 {
+    .section1 .bgrnd {
+      padding-top: -50px; }
+      .section1 .bgrnd a {
+        margin-top: 100px;
+        margin-bottom: -50px; }
+    .section1 div h2 {
       padding-top: 50px; }
-      .section1 h2 span {
+      .section1 div h2 span {
         font-size: 55px; }
-    .section1 ul {
-      width: 100%;
-      text-align: center; }
+    .section1 div p {
+      font-size: 18px; }
   .title1 {
     font-size: 30px;
     padding: 40px 0; }
+  .title1:nth-of-type(2) {
+    font-size: 37px; }
+  .timer {
+    width: 60%; }
+    .timer div p {
+      font-size: 55px; }
   .section2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-    background-color: #d6d6d6; }
+    grid-gap: 30px; }
     .section2 div {
       margin: auto;
       width: 93%;
-      height: 600px; }
+      height: 700px; }
       .section2 div img {
-        margin: 0 auto;
-        border: 2px solid #1b2d6f; }
+        margin: 10px auto;
+        border: 2px solid #1b2d6f;
+        height: 210px; }
       .section2 div ul {
         margin: auto; }
         .section2 div ul li {
           font-size: 12px; }
+      .section2 div button {
+        width: 230px; }
   .accordion {
     display: none; }
   .nociones-txt {
@@ -594,23 +631,34 @@ footer {
 
 @media (min-width: 1440px) {
   .section1 {
-    padding-top: 10px;
     background-size: 135%; }
-    .section1 div h2 span {
-      font-size: 80px; }
+    .section1 .bgrnd a {
+      margin-top: 30px; }
+    .section1 div h2 {
+      width: 90%; }
+      .section1 div h2 span {
+        font-size: 75px; }
     .section1 div p {
-      font-size: 18px; }
+      font-size: 20px;
+      width: 90%; }
   .title1:first-of-type {
     font-size: 45px; }
+  .timer {
+    width: 40%; }
+    .timer div p {
+      font-size: 62px; }
+    .timer div span {
+      font-size: 22px; }
   .section2 div {
-    height: 650px; }
+    height: 750px; }
     .section2 div img {
-      max-height: 300px;
-      object-fit: cover; }
+      height: 300px; }
     .section2 div ul li {
       font-size: 12px; }
   .section2 div:nth-child(4), .section2 div:nth-child(5) {
     height: 500px; }
+    .section2 div:nth-child(4) ul, .section2 div:nth-child(5) ul {
+      margin: 10px auto; }
   .section3 section {
     display: flex;
     flex-direction: row;
@@ -624,6 +672,8 @@ footer {
         border-radius: 50%; }
     .section3 section img {
       display: initial; }
+  .section3 button {
+    width: 180px; }
   .s3-imgs {
     display: flex;
     flex-direction: column;

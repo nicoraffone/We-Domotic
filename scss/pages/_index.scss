@@ -10,11 +10,20 @@
     background-repeat: no-repeat;
     animation: mov 25s infinite ease-in-out alternate;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 30px;
+    height: 95vh;
     .bgrnd{
         width: 100%;
         height: 100%;
         background-color: rgba(255, 255, 255, 0.404);
+        a{
+            margin-top: 60px;
+            button{
+                height: 55px;
+                width: 150px;
+                font-size: 24px;
+            }
+        }
     }
     div{
         display: flex;
@@ -33,33 +42,38 @@
             margin: 20px auto;
             display: flex;
             flex-direction: column;
+            width: 82%;
             span{
                 font-weight: bold;
+                font-size: 35px;
                 text-shadow: 1.4px 1.4px $secundario-opacity2;
             }
         }
         p{
             color: $color-principal;
             text-shadow: 0.2px 0.2px black;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: bold;
             margin: auto;
             width: 82%;
         }
-        .second-txt{
-            margin-top: 30px;
-            color: $color-principal;
-            text-align: center;
-            list-style: none;
-            text-shadow: 0.2px 0.2px black;
-            h3{
-                font-size: 14px;
-                font-weight: bold;
-            }
-            p{
-                font-weight: bold;
-            }
-        };
+    }
+}
+
+.second-txt{
+    margin: auto;
+    margin-top: 10px;
+    color: $color-principal;
+    text-align: center;
+    list-style: none;
+    text-shadow: 0.2px 0.2px black;
+    width: 90%;
+    h3{
+        background: none;
+        font-size: 25px;
+    }
+    p{
+        font-weight: bold;
     }
 }
 
@@ -79,7 +93,6 @@
     background: transparent;
     height: 40px;
     width: 120px;
-    max-width: 160px;
     border: 4px solid $color-principal;
     border-radius: 15px;
     margin-bottom: 20px;
@@ -98,7 +111,6 @@
     font-weight: bold;
     padding: 20px 10px;
     text-align: center;
-    background-color: rgb(214, 214, 214);
     margin: 0;
 }
 
@@ -106,22 +118,24 @@
     margin-top: -35px;
     font-size: 22px;
     color: red;
-    text-shadow: 1.4px 1.4px yellow;
+    -webkit-text-stroke: 0.7px black;
 }
 
 .timer{
     display: flex;
-    justify-content: space-around;
-    background-color: rgb(214, 214, 214);
-    padding-bottom: 30px;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
     div{
         text-align: center;
         p{
             font-size: 30px;
             font-weight: bold;
             color: red;
-            text-shadow: 1.4px 1.4px yellow;
             margin-bottom: -7px;
+            -webkit-text-stroke: 1.5px black;
         }
         span{
             color: $color-principal;
@@ -142,7 +156,6 @@
     div{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         text-align: left;
         p{
@@ -152,12 +165,17 @@
     img{
         width: 100%;
         border-radius: 20px;
+        height: 180px;
+        object-fit: cover;
     }
     ul{
     li{
         font-size: 14px;
         margin-bottom: 5px;
     }
+    }
+    a{
+        justify-self: end;
     }
     }
 }
@@ -167,16 +185,16 @@
     margin: auto;
 }
 .accordion-item{
-    background: linear-gradient(to left,$principal-opacity, $secundario-opacity);
+    background: white;
     z-index: 10;
     margin-top: 0;
     button{
         font-weight: bold;
         color: $color-principal;
-        background-color: rgba(68, 216, 164, 0.10);
+        background-color: white;
     }
     button:active, button:focus{
-        background-color: rgba(68, 216, 164, 0.10);
+        background-color: white;
     }
 }
 .accordion-body{
@@ -184,7 +202,7 @@
     img{
         width: 100%;
         max-width: 450px;
-        max-height: 280px;
+        max-height: 330px;
         margin-bottom: 15px;
         object-fit: cover;
         border-radius: 15px;
@@ -198,8 +216,13 @@
         margin-top: 13px;
         font-size: 16px;
     }
+    a{
+        margin-left: 27%;
+        button{
+            width: 190px;
+        }
+    }
 }
-
 .banner-ig{
     background: linear-gradient(to left,$color-principal, $color-secundario);
     height: 120px;
@@ -228,10 +251,10 @@
 
 .section3{
     color: $color-principal;
-    background-color: rgb(214, 214, 214);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
     section{
         img{
             display: none;
@@ -268,5 +291,4 @@
 .div-bot{
     width: 100%;
     height: 200px;
-    background-color: rgb(214, 214, 214);
 }
