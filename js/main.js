@@ -23,7 +23,7 @@ window.onscroll = function(){
 
 //! TIMER
 
-const countDownDate = new Date("Sep 18, 2023 00:00:00").getTime();
+const countDownDate = new Date("Sep 23, 2023 00:00:00").getTime();
 const x = setInterval(function(){
     let now = new Date().getTime();
     let distance = countDownDate - now;
